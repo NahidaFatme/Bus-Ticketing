@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <link rel="shortcut icon" href="images/bus-icon.png" type="image/png">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/de58b7984c.js" crossorigin="anonymous"></script>
+    <!-- daisy ui and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary': '#1DD100',
+                'secondary':'#030712',
+                'third': 'rgba(3, 7, 18, 0.6)'
+              },
+              backgroundImage: {
+                'banner': "url('images/bannger.pn')",
+                'tprogram': "url('Images/3.png')",
+                'sprogram': "url('Images/4.png')"
+              }
+            }
+          }
+        }
+      </script>
+       <!-- Custom css -->
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+        .second-font{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="container mx-auto px-5 lg:px-32">
+        <nav class="my-4 lg:my-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0 pr-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-semibold" >
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destiation</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                    <h2 class=" text-2xl lg:text-4xl font-extrabold">P-Ticket</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base font-semibold text-third">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destiation</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex items-center gap-3">
+                    <button class="btn border-[#1dd100] bg-[#1dd1001A] px-7">
+                        <H2 class="text-primary font-bold text-xl">Bus</H2>
+                        <img src="images/bus-icon.png" alt="">
+                    </button>
+                </div>
+              </div>
+        </nav>
+        <div class="lg:relative">
+            <div class="w-full h-full lg:h-[550px] bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center rounded-3xl">
+                <div class="text-center pt-20 pb-32">
+                    <h2 class="text-6xl text-white font-extrabold pb-6">End-to-End Travel with</h2>
+                    <h2 class="text-6xl font-extrabold text-primary pb-6">P Paribohon</h2>
+                    <p class="text-lg text-white font-normal pb-8 px-[215px]">Welcome aboard our bus company, where convenience, comfort, and safety converge on every journey. Embark on adventures with us, your trusted partner in safe and convenient travel solutions.</p>
+                    <button class="bg-primary text-secondary text-xl font-extrabold border-none min-h-0 px-8 py-5 rounded-xl">Buy Tickets</button>
+                </div> 
+            </div>
+            <div class="lg:absolute -bottom-16 left-44 mt-4 lg:mt-0 flex flex-col lg:flex-row gap-6">
+                <div class="bg-white px-10 py-6 text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
+                    <div class="flex flex-row gap-2 justify-center">
+                        <div>
+                            <img src="images/people.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="second-font font-bold text-4xl text-secondary ">500k+</h2>
+                            <p class="text-secondary
+                            ">Registered Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="\ bg-white px-10 py-6  text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
+                    <div class="flex flex-row gap-2 justify-center">
+                        <div>
+                            <img src="images/ticket-cupon.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="second-font font-bold text-4xl text-secondary ">1.7 Lacks</h2>
+                            <p class="text-secondary
+                            ">Tickets Sold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white px-10 py-6  text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
+                    <div class="flex flex-row gap-2 justify-center">
+                        <div>
+                            <img src="images/stoppage.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="second-font font-bold text-4xl text-secondary ">80k+</h2>
+                            <p class="text-secondary
+                            ">Rental Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="utility.js"></script>
+</body>
+</html>
