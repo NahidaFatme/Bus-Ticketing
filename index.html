@@ -78,16 +78,16 @@
         </nav>
         <div class="lg:relative">
             <div class="w-full h-full lg:h-[550px] bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center rounded-3xl">
-                <div class="text-center pt-20 pb-32">
-                    <h2 class="text-6xl text-white font-extrabold pb-6">End-to-End Travel with</h2>
-                    <h2 class="text-6xl font-extrabold text-primary pb-6">P Paribohon</h2>
-                    <p class="text-lg text-white font-normal pb-8 px-[215px]">Welcome aboard our bus company, where convenience, comfort, and safety converge on every journey. Embark on adventures with us, your trusted partner in safe and convenient travel solutions.</p>
-                    <button class="bg-primary text-secondary text-xl font-extrabold border-none min-h-0 px-8 py-5 rounded-xl">Buy Tickets</button>
+                <div class="text-center pt-12 lg:pt-20 pb-12 lg:pb-32">
+                    <h2 class="text-2xl lg:text-6xl text-white font-extrabold pb-6">End-to-End Travel with</h2>
+                    <h2 class="text-5xl lg:text-6xl font-extrabold text-primary pb-6">P Paribohon</h2>
+                    <p class="text-lg text-white font-normal pb-4 lg:pb-8 px-4 lg:px-[215px]">Welcome aboard our bus company, where convenience, comfort, and safety converge on every journey. Embark on adventures with us, your trusted partner in safe and convenient travel solutions.</p>
+                    <button class="bg-primary text-secondary text-xl font-extrabold border-none min-h-0 px-6 py-4 lg:px-8 lg:py-5 rounded-xl">Buy Tickets</button>
                 </div> 
             </div>
-            <div class="lg:absolute -bottom-16 left-44 mt-4 lg:mt-0 flex flex-col lg:flex-row gap-6">
+            <div class="lg:absolute -bottom-16 left-44 mt-4 lg:mt-0 flex flex-col lg:flex-row gap-8 lg:gap-6">
                 <div class="bg-white px-10 py-6 text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
-                    <div class="flex flex-row gap-2 justify-center">
+                    <div class="flex flex-row gap-8 lg:gap-2 justify-center">
                         <div>
                             <img src="images/people.png" alt="">
                         </div>
@@ -98,8 +98,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="\ bg-white px-10 py-6  text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
-                    <div class="flex flex-row gap-2 justify-center">
+                <div class=" bg-white px-10 py-6  text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
+                    <div class="flex flex-row gap-8 lg:gap-2 justify-center">
                         <div>
                             <img src="images/ticket-cupon.png" alt="">
                         </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class=" bg-white px-10 py-6  text-white lg:max-w-[550px] rounded-2xl border-b-4 border-primary">
-                    <div class="flex flex-row gap-2 justify-center">
+                    <div class="flex flex-row gap-8 lg:gap-2 justify-center">
                         <div>
                             <img src="images/stoppage.png" alt="">
                         </div>
@@ -125,7 +125,53 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main class="container mx-auto px-5 lg:px-32">
+    <!-- Best price -->
+    <section class="mt-10 lg:mt-40">
+        <div class="flex flex-col gap-12 text-center">
+            <h2 class="font-bold text-4xl">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row gap-6 justify-center text-center">
+                <!-- 1st cupon -->
+                <div class="flex flex-col lg:flex-row">
+                    <div class="bg-[#ffbf0f] p-[52px] rounded-l-3xl">
+                        <h2 class="text-4xl font-extrabold">15% OFF</h2>
+                        <h5 class="text-l font-bold">on your next purchase</h5>
+                        <p class="text-xl font-medium text-third">use by January 2024</p>
+                    </div>
+                    <div class="bg-[#ffbf0f] w-12 h-[220px] relative">
+                        <div class="bg-white h-6 w-12 rounded-b-full"></div>
+                        <div class="bg-white h-6 w-12 rounded-t-full absolute bottom-0"></div>
+                    </div>
+                    <div class="bg-[#ffbf0f] py-[66px] px-[52px] rounded-r-3xl">
+                        <h2 class="text-3xl font-bold">New15</h2>
+                        <h5 class="text-l font-bold text-third">Cupon Code</h5>
+                    </div>
+                </div>
+                <!-- 2nd cupon -->
+                <div class="flex flex-col lg:flex-row">
+                    <div class="bg-[#F78C9C] p-[52px] rounded-l-3xl">
+                        <h2 class="text-4xl font-extrabold">20% OFF</h2>
+                        <h5 class="text-l font-bold">on your next purchase</h5>
+                        <p class="text-xl font-medium text-third">use by January 2024</p>
+                    </div>
+                    <div class="bg-[#F78C9C] w-12 h-[220px] relative">
+                        <div class="bg-white h-6 w-12 rounded-b-full"></div>
+                        <div class="bg-white h-6 w-12 rounded-t-full absolute bottom-0"></div>
+                    </div>
+                    <div class="bg-[#F78C9C] py-[66px] px-[52px] rounded-r-3xl">
+                        <h2 class="text-3xl font-bold">Couple 20</h2>
+                        <h5 class="text-l font-bold text-third">Cupon Code</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="border-2 border-primary text-primary text-xl font-extrabold px-6 py-4 lg:px-8 lg:py-5 rounded-xl">See All Offers</button>
+            </div>
+            
+        </div>
+    </section>
+
+    </main>
     <footer></footer>
     <script src="utility.js"></script>
 </body>
