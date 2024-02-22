@@ -31,7 +31,7 @@
         incrementSeat();
         decrementSeat();
         stopOverCounts();
-        
+
         });
     }
 function totalCost(amount) {
@@ -118,7 +118,6 @@ function stopOverCounts(){
     let firstAvailabeSeat = parseInt(firstSeat.innerText);
     if(firstSeatCount + 1 > 4) {
         alert("You cannot select more than 4 seats");
-        // document.getElementsByClassName('seat').disabled = true;
         return;
     }
     if(firstAvailabeSeat - 1 < 0)
