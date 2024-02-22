@@ -22,18 +22,19 @@
         tr.appendChild(td3);
 
         tableBody.appendChild(tr);
-
         event.target.setAttribute("disabled", true);
 
         const amount = parseInt(td3.innerText);
         let total_Cost = totalCost(amount);
         grandTotal();
+        stopSelectingSeat()
         incrementSeat();
         decrementSeat();
-        stopOverCounts();
 
         });
     }
+
+
 function totalCost(amount) {
     sum = sum + amount;
     totalPrice.innerText = sum;
@@ -111,18 +112,22 @@ function grandTotal(status) {
     }
 }
 
-function stopOverCounts(){
+function stopSelectingSeat(){
     const firstCount = document.getElementById('totalSeat');
     let firstSeatCount = parseInt(firstCount.innerText);
     const firstSeat = document.getElementById('availableSeat');
     let firstAvailabeSeat = parseInt(firstSeat.innerText);
-    if(firstSeatCount + 1 > 4) {
-        alert("You cannot select more than 4 seats");
+    if(firstSeatCount + 1 >= 4) {
+        alert("Your seat limit is 4");
+        const seatButtons = document.getElementsByClassName('seat');
+        for (const button of seatButtons) {
+            button.setAttribute("disabled", true);
+        }
         return;
     }
     if(firstAvailabeSeat - 1 < 0)
     {
-        alert("No more seats available");
+        alert("No seat available");
         return;
     }
 }
